@@ -7,7 +7,7 @@
 	{
 		"name": "Veronica Hdez M.",
 		"role" : "Developer"
-	}]
+	}],
     "autoload": {
         "psr-4": { "": "src/" },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
