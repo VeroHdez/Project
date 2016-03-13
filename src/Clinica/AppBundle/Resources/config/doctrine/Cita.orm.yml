@@ -1,6 +1,6 @@
 Clinica\AppBundle\Entity\Cita:
     type: entity
-    table: null
+    table: cita
     id:
         id:
             type: integer
@@ -12,4 +12,14 @@ Clinica\AppBundle\Entity\Cita:
             type: date
         hora:
             type: time
+            
+    manyToOne:
+        cliente:
+            targetEntity: Cliente
+            joinColumn: cliente_id
+            referencedColumnName: id
+        doctor:
+            targetEntity: Doctor
+            joinColumn: doctor_id
+            referencedColumnName: id
     lifecycleCallbacks: {  }

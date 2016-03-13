@@ -21,6 +21,10 @@ class Cita
      * @var \DateTime
      */
     private $hora;
+    
+    protected $cliente;
+    
+    protected $doctor;
 
 
     /**

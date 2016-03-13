@@ -15,4 +15,10 @@ Clinica\AppBundle\Entity\Horario:
             type: time
         horarioSalida:
             type: time
+            
+    manyToOne:
+        doctor:
+            targetEntity: Doctor
+            joinColumn: doctor_id
+            referencedColumnName: id
     lifecycleCallbacks: {  }

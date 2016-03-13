@@ -21,6 +21,8 @@ class Vacaciones
      * @var \DateTime
      */
     private $fecFinal;
+    
+    protected $doctor;
 
 
     /**

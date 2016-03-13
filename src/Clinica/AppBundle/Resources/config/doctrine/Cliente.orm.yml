@@ -1,6 +1,6 @@
 Clinica\AppBundle\Entity\Cliente:
     type: entity
-    table: null
+    table: cliente
     id:
         id:
             type: integer

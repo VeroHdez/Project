@@ -12,4 +12,10 @@ Clinica\AppBundle\Entity\Vacaciones:
             type: date
         fecFinal:
             type: date
+            
+    manyToOne:
+        doctor:
+            targetEntity: Doctor
+            joinColumn: doctor_id
+            referencedColumnName: id
     lifecycleCallbacks: {  }

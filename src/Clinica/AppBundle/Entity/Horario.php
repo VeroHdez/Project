@@ -26,6 +26,8 @@ class Horario
      * @var \DateTime
      */
     private $horarioSalida;
+    
+    protected $doctor;
 
 
     /**
