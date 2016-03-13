@@ -1,0 +1,94 @@
+<?php
+
+namespace Clinica\AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Vacaciones
+ *
+ * @ORM\Table()
+ * @ORM\Entity
+ */
+class Vacaciones
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="fechaInicio", type="date")
+     */
+    private $fechaInicio;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="fechaFinal", type="date")
+     */
+    private $fechaFinal;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set fechaInicio
+     *
+     * @param \DateTime $fechaInicio
+     * @return Vacaciones
+     */
+    public function setFechaInicio($fechaInicio)
+    {
+        $this->fechaInicio = $fechaInicio;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaInicio
+     *
+     * @return \DateTime 
+     */
+    public function getFechaInicio()
+    {
+        return $this->fechaInicio;
+    }
+
+    /**
+     * Set fechaFinal
+     *
+     * @param \DateTime $fechaFinal
+     * @return Vacaciones
+     */
+    public function setFechaFinal($fechaFinal)
+    {
+        $this->fechaFinal = $fechaFinal;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaFinal
+     *
+     * @return \DateTime 
+     */
+    public function getFechaFinal()
+    {
+        return $this->fechaFinal;
+    }
+}

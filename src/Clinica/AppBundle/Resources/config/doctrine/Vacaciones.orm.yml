@@ -1,0 +1,15 @@
+Clinica\AppBundle\Entity\Vacaciones:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        fecInicio:
+            type: date
+        fecFinal:
+            type: date
+    lifecycleCallbacks: {  }

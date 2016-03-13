@@ -1,0 +1,124 @@
+<?php
+
+namespace Clinica\AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Horario
+ *
+ * @ORM\Table()
+ * @ORM\Entity
+ */
+class Horario
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="consultorio", type="string", length=2)
+     */
+    private $consultorio;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="horaEntrada", type="time")
+     */
+    private $horaEntrada;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="horaSalida", type="time")
+     */
+    private $horaSalida;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set consultorio
+     *
+     * @param string $consultorio
+     * @return Horario
+     */
+    public function setConsultorio($consultorio)
+    {
+        $this->consultorio = $consultorio;
+
+        return $this;
+    }
+
+    /**
+     * Get consultorio
+     *
+     * @return string 
+     */
+    public function getConsultorio()
+    {
+        return $this->consultorio;
+    }
+
+    /**
+     * Set horaEntrada
+     *
+     * @param \DateTime $horaEntrada
+     * @return Horario
+     */
+    public function setHoraEntrada($horaEntrada)
+    {
+        $this->horaEntrada = $horaEntrada;
+
+        return $this;
+    }
+
+    /**
+     * Get horaEntrada
+     *
+     * @return \DateTime 
+     */
+    public function getHoraEntrada()
+    {
+        return $this->horaEntrada;
+    }
+
+    /**
+     * Set horaSalida
+     *
+     * @param \DateTime $horaSalida
+     * @return Horario
+     */
+    public function setHoraSalida($horaSalida)
+    {
+        $this->horaSalida = $horaSalida;
+
+        return $this;
+    }
+
+    /**
+     * Get horaSalida
+     *
+     * @return \DateTime 
+     */
+    public function getHoraSalida()
+    {
+        return $this->horaSalida;
+    }
+}

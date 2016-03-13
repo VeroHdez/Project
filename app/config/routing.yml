@@ -1,3 +1,4 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+clinica_app:
+    resource: "@ClinicaAppBundle/Resources/config/routing.yml"
+    prefix:   /
+

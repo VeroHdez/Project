@@ -1,0 +1,20 @@
+Clinica\AppBundle\Entity\Cliente:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '60'
+        apellidos:
+            type: string
+            length: '120'
+        telefono:
+            type: string
+            length: '12'
+    lifecycleCallbacks: {  }

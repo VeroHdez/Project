@@ -1,0 +1,18 @@
+Clinica\AppBundle\Entity\Horario:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        consultorio:
+            type: string
+            length: '2'
+        horarioEntrada:
+            type: time
+        horarioSalida:
+            type: time
+    lifecycleCallbacks: {  }

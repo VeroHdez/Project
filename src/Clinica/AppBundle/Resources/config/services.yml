@@ -1,0 +1,7 @@
+parameters:
+#    clinica_app.example.class: Clinica\AppBundle\Example
+
+services:
+#    clinica_app.example:
+#        class: %clinica_app.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
