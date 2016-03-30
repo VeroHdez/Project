@@ -1,0 +1,20 @@
+{# empty Twig template #}
+
+{%extends "base.html.twig" %}
+
+{%block body %}
+    Dia <select><option value=""></option></select>
+    Mes <select><option value=""></option></select>
+    Año <select><option value=""></option></select>
+    <table>
+        <tr>
+            <th>Hora</th>
+            <th rowspan="2" >Paciente</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><a ><img src="{{ asset('bundle/clinicaapp/images/delete.png') }}"></a></td>
+        </tr>
+    </table>
+{%endblock %}

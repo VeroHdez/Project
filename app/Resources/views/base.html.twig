@@ -1,13 +1,40 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <meta charset="UTF-8">
+        <title>{% block title %}Prueba{%endblock%}</title>
+        {% block stylesheets %}
+           
+            <link rel="stylesheet" href="{{ asset('bundles/clinicaapp/css/foundation.css')}}" />
+            <link rel="stylesheet" href="{{ asset('bundles/clinicaapp/css/app.css')}}" />
+            <link rel="stylesheet" href="{{ asset('bundles/clinicaapp/css/estilo.css')}}" />
+        {% endblock %}
+        
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <div class="row" id="sidebar" >
+            <div id="menu" class="large-12 columns">
+                {%block sidebar %}
+                    <ul>
+                        <li><a href="/" class="small button">Home</a></li>
+                        <li><a href="/captura" class="small button">Captura</a></li>
+                        <li><a href="/Citas" class="small button">Citas</a></li>
+                        <li><a href="/Cancelacion" class="small button">Cancelacion</a></li>
+                    </ul>
+                {% endblock %}
+            </div>
+            <div class="large-12 columns">
+                {%block body %}
+                {% endblock %}
+            </div>
+            {% set contact_email = "value" %}
+
+            <div id="pie" class="large-12 columns">
+                <footer>
+                Contacto: {{ contact_email }}
+                </footer>
+            </div>
+        </div>
+        
     </body>
 </html>
