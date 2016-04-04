@@ -20,12 +20,12 @@ class __TwigTemplate_94249ccb86568e98a70215f3a07aed1331c245acb53f26d58331e827da1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3f77c2134f72d848332b3decd3a3ccff961a1c5aa29a6ee59d32e5f39ece15bc = $this->env->getExtension("native_profiler");
-        $__internal_3f77c2134f72d848332b3decd3a3ccff961a1c5aa29a6ee59d32e5f39ece15bc->enter($__internal_3f77c2134f72d848332b3decd3a3ccff961a1c5aa29a6ee59d32e5f39ece15bc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@ClinicaApp/Default/index.html.twig"));
+        $__internal_f8bdf0b290fc2fbc960b5d91cb24dc4dec6de55c2efb2a57fbfab48add7dab2a = $this->env->getExtension("native_profiler");
+        $__internal_f8bdf0b290fc2fbc960b5d91cb24dc4dec6de55c2efb2a57fbfab48add7dab2a->enter($__internal_f8bdf0b290fc2fbc960b5d91cb24dc4dec6de55c2efb2a57fbfab48add7dab2a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@ClinicaApp/Default/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_3f77c2134f72d848332b3decd3a3ccff961a1c5aa29a6ee59d32e5f39ece15bc->leave($__internal_3f77c2134f72d848332b3decd3a3ccff961a1c5aa29a6ee59d32e5f39ece15bc_prof);
+        $__internal_f8bdf0b290fc2fbc960b5d91cb24dc4dec6de55c2efb2a57fbfab48add7dab2a->leave($__internal_f8bdf0b290fc2fbc960b5d91cb24dc4dec6de55c2efb2a57fbfab48add7dab2a_prof);
 
     }
 

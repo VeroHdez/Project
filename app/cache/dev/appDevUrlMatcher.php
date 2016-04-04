@@ -122,13 +122,42 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // clinica_app_homepage
-        if (rtrim($pathinfo, '/') === '/clinica') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'clinica_app_homepage');
+        if (0 === strpos($pathinfo, '/cli')) {
+            // clinica_app_homepage
+            if (rtrim($pathinfo, '/') === '/clinica') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'clinica_app_homepage');
+                }
+
+                return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'clinica_app_homepage',);
             }
 
-            return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'clinica_app_homepage',);
+            if (0 === strpos($pathinfo, '/clientes')) {
+                // nuevo_cliente
+                if ($pathinfo === '/clientes/newCliente') {
+                    return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\ClienteController::newClienteAction',  '_route' => 'nuevo_cliente',);
+                }
+
+                // mostrar_cliente
+                if ($pathinfo === '/clientes/listaCliente') {
+                    return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\ClienteController::listaClientesAction',  '_route' => 'mostrar_cliente',);
+                }
+
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/doctores')) {
+            // nuevo_doctor
+            if ($pathinfo === '/doctores/newDoctor') {
+                return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\DoctorController::newDoctorAction',  '_route' => 'nuevo_doctor',);
+            }
+
+            // mostrar_doctor
+            if ($pathinfo === '/doctores/listaDoctor') {
+                return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\DoctorController::listaDoctorAction',  '_route' => 'mostrar_doctor',);
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

@@ -15,13 +15,13 @@ class __TwigTemplate_e2dadac6d1cbd8d895751c889dc6d701f178a548f61dfff92ba7aa9b47d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_afba2cc968406ad5dea791f7b211a0824362aed89c9bb4c24505a5a48c6fa868 = $this->env->getExtension("native_profiler");
-        $__internal_afba2cc968406ad5dea791f7b211a0824362aed89c9bb4c24505a5a48c6fa868->enter($__internal_afba2cc968406ad5dea791f7b211a0824362aed89c9bb4c24505a5a48c6fa868_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/error.atom.twig"));
+        $__internal_c48b7c3f8156a0bff3749e1960afd391566e8a068b82f3932b557f29ea54c744 = $this->env->getExtension("native_profiler");
+        $__internal_c48b7c3f8156a0bff3749e1960afd391566e8a068b82f3932b557f29ea54c744->enter($__internal_c48b7c3f8156a0bff3749e1960afd391566e8a068b82f3932b557f29ea54c744_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/error.atom.twig"));
 
         // line 1
         $this->loadTemplate("@Twig/Exception/error.xml.twig", "@Twig/Exception/error.atom.twig", 1)->display($context);
         
-        $__internal_afba2cc968406ad5dea791f7b211a0824362aed89c9bb4c24505a5a48c6fa868->leave($__internal_afba2cc968406ad5dea791f7b211a0824362aed89c9bb4c24505a5a48c6fa868_prof);
+        $__internal_c48b7c3f8156a0bff3749e1960afd391566e8a068b82f3932b557f29ea54c744->leave($__internal_c48b7c3f8156a0bff3749e1960afd391566e8a068b82f3932b557f29ea54c744_prof);
 
     }
 

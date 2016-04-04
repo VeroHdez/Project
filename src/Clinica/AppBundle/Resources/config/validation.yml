@@ -1,0 +1,17 @@
+## YAML Template.
+Clinica\AppBundle\Entity\Cliente:
+    properties:
+        nombre:
+            - NotBlank: ~
+        apellidos:
+            - NotBlank: ~
+
+Clinica\AppBundle\Entity\Doctor:
+    properties:
+        nombre:
+            - NotBlank: ~
+        apellidos:
+            - NotBlank: ~
+        especialidad:
+            - NotBlank: ~
+   

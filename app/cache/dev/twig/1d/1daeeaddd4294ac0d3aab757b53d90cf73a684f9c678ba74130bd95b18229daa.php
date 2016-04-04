@@ -15,11 +15,14 @@ class __TwigTemplate_9b9af03cad56c86395a97b47f6a7aa82b6c5f25ab8634c34d0f861cdbd9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_adc2d4e1271ab7a53a353029aa612f474db57be84fc916ce5d6cd61719dee40f = $this->env->getExtension("native_profiler");
-        $__internal_adc2d4e1271ab7a53a353029aa612f474db57be84fc916ce5d6cd61719dee40f->enter($__internal_adc2d4e1271ab7a53a353029aa612f474db57be84fc916ce5d6cd61719dee40f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@ClinicaApp/Default/captura.html.twig"));
+        $__internal_a7aa107c52112c0661b98010fef5bbe567e0098b93562af74670324f22233dfa = $this->env->getExtension("native_profiler");
+        $__internal_a7aa107c52112c0661b98010fef5bbe567e0098b93562af74670324f22233dfa->enter($__internal_a7aa107c52112c0661b98010fef5bbe567e0098b93562af74670324f22233dfa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@ClinicaApp/Default/captura.html.twig"));
 
+        // line 2
+        echo "
+";
         
-        $__internal_adc2d4e1271ab7a53a353029aa612f474db57be84fc916ce5d6cd61719dee40f->leave($__internal_adc2d4e1271ab7a53a353029aa612f474db57be84fc916ce5d6cd61719dee40f_prof);
+        $__internal_a7aa107c52112c0661b98010fef5bbe567e0098b93562af74670324f22233dfa->leave($__internal_a7aa107c52112c0661b98010fef5bbe567e0098b93562af74670324f22233dfa_prof);
 
     }
 
@@ -30,8 +33,9 @@ class __TwigTemplate_9b9af03cad56c86395a97b47f6a7aa82b6c5f25ab8634c34d0f861cdbd9
 
     public function getDebugInfo()
     {
-        return array ();
+        return array (  22 => 2,);
     }
 }
 /* {# empty Twig template #}*/
+/* */
 /* */

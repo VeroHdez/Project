@@ -1,0 +1,26 @@
+{# empty Twig template #}
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="large-6 columns">
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Cedula</th>
+                <th>Especialidad</th>
+                <th>Telefono</th>
+                <th>Precio de la Consulta</th>
+            </tr>
+            {% for doctor in doctores %}
+                <tr>
+                    <td>{{doctor.nombre}}</td>
+                    <td>{{doctor.apellidos}}</td>
+                    <td>{{doctor.cedula}}</td>
+                    <td>{{doctor.especialidad}}</td>
+                    <td>{{doctor.telefono}}</td>
+                    <td>{{doctor.precioConsulta}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

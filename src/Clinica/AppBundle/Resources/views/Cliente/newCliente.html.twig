@@ -1,0 +1,13 @@
+{# empty Twig template #}
+{% extends 'base.html.twig' %}
+{% block title %}Alta Cliente {% endblock %}
+{% block  body %} 
+    {{ form_start(form,{'attr':{'id':'cliente-new'}}) }}
+    {{ form_errors(form) }}
+    {{ form_row(form.nombre) }}
+    {{ form_row(form.apellidos) }}
+    {{ form_row(form.telefono) }}
+    {{ form_row(form.guardar) }}
+    {{ form_end(form) }}
+{% endblock %}
+

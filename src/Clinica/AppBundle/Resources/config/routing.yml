@@ -1,3 +1,20 @@
 clinica_app_homepage:
     pattern:  /clinica/
     defaults: { _controller: ClinicaAppBundle:Default:index }
+    
+nuevo_cliente:
+    pattern: /clientes/newCliente
+    defaults: {_controller: ClinicaAppBundle:Cliente:newCliente }
+
+mostrar_cliente:
+    pattern: /clientes/listaCliente
+    defaults: {_controller: ClinicaAppBundle:Cliente:listaClientes}
+
+nuevo_doctor:
+    pattern: /doctores/newDoctor
+    defaults: {_controller: ClinicaAppBundle:Doctor:newDoctor }
+    
+mostrar_doctor:
+    pattern: /doctores/listaDoctor
+    defaults: {_controller: ClinicaAppBundle:Doctor:listaDoctor}
+    

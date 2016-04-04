@@ -3,20 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/views/Default/layout.html.twig</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/views/Default/captura.html.twig</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/DataFixtures/ORM/LoadClienteData.php</file>
+            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/views/Doctor/listaDoctor.html.twig</file>
+            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Form/Type/ClienteType.php</file>
+            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/views/Cliente/listaClientes.html.twig</file>
             <file>file:/C:/server/htdocs/Project/app/Resources/views/base.html.twig</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/views/Default/index.html.twig</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Entity/Vacaciones.php</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Controller/DefaultController.php</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/config/doctrine/Cita.orm.yml</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/config/doctrine/Horario.orm.yml</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/public/css/app.css</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/config/doctrine/Vacaciones.orm.yml</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Entity/Cita.php</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/config/doctrine/Cliente.orm.yml</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Entity/Horario.php</file>
+            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/views/Doctor/newDoctor.html.twig</file>
+            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Form/Type/DoctorType.php</file>
+            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Controller/ClienteController.php</file>
         </group>
     </open-files>
 </project-private>

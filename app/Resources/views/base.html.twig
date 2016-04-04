@@ -17,7 +17,10 @@
                 {%block sidebar %}
                     <ul>
                         <li><a href="/" class="small button">Home</a></li>
-                        <li><a href="/captura" class="small button">Captura</a></li>
+                        <li><a href="{{path('nuevo_cliente') }}" class="small button">Alta Cliente</a></li>
+                        <li><a href="{{path('mostrar_cliente')}}" class="small button">Lista de Clientes </a></li>
+                        <li><a href="{{path('nuevo_doctor') }}" class="small button">Alta Doctor </a></li>
+                        <li><a href="{{path('mostrar_doctor') }}" class="small button">Lista de Doctores </a></li>
                         <li><a href="/Citas" class="small button">Citas</a></li>
                         <li><a href="/Cancelacion" class="small button">Cancelacion</a></li>
                     </ul>

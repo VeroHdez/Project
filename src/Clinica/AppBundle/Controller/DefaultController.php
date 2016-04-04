@@ -10,4 +10,6 @@ class DefaultController extends Controller
     {
         return $this->render('ClinicaAppBundle:Default:index.html.twig');
     }
+    
+   
 }
