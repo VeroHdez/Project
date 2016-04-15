@@ -216,3 +216,9 @@ b074bc,::1,GET,http://localhost/Project/web/app_dev.php/doctores/listaDoctor,145
 c8c8d1,::1,GET,http://localhost/Project/web/app_dev.php/doctores/listaDoctor,1459743728,1754aa,200
 1754aa,::1,GET,http://localhost/Project/web/app_dev.php/doctores/listaDoctor,1459743728,,500
 e8c67e,::1,GET,http://localhost/Project/web/app_dev.php/doctores/listaDoctor,1459743739,,200
+eaec1b,::1,GET,http://localhost/Project/web/app_dev.php/doctores/newDoctor,1460687491,,200
+bc29cd,::1,GET,http://localhost/Project/web/app_dev.php/clientes/newCliente,1460687496,,200
+0b7c39,::1,GET,http://localhost/Project/web/app_dev.php/clientes/newCliente,1460687514,68ae83,200
+68ae83,::1,POST,http://localhost/Project/web/app_dev.php/clientes/newCliente,1460687514,,500
+d37c72,::1,POST,http://localhost/Project/web/app_dev.php/clientes/newCliente,1460688942,,302
+b8e546,::1,GET,http://localhost/Project/web/app_dev.php/clientes/listaCliente,1460688943,,200
