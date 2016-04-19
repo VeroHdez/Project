@@ -15,18 +15,18 @@ namespace Clinica\AppBundle\Controller;
  */
 class Logger
 {
-    protected $archivo;
+    protected $manejador;
     function __construct()
     {
-        $this->archivo = new Archivo();
+        $this->manejador = $manejador;
     }
     function error($mensaje)
     {
-        $this->archivo->escribir('* [ERROR] '.$mensaje);
+        $this->manejador->escribir('* [ERROR] '.$mensaje);
     }
     function info($mensaje)
     {
-        $this->archivo->escribir('info: '.$mensaje);
+        $this->manejador->escribir('info: '.$mensaje);
     }
-    // ...
+    
 }

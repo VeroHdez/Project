@@ -1,0 +1,20 @@
+Clinica\AppBundle\Entity\Usuarios:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        usuario:
+            type: string
+            length: '20'
+        pass:
+            type: string
+            length: '150'
+        nivel:
+            type: string
+            length: '14'
+    lifecycleCallbacks: {  }

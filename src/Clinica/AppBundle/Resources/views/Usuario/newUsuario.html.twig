@@ -1,0 +1,12 @@
+{# empty Twig template #}
+
+{% block title %}Alta Usuario {% endblock %}
+{% block  body %} 
+    {{ form_start(form,{'attr':{'id':'usuario-new'}}) }}
+    {{ form_errors(form) }}
+    {{ form_row(form.usuario) }}
+    {{ form_row(form.pass) }}
+    {{ form_row(form.nivel) }}
+    {{ form_row(form.guardar) }}
+    {{ form_end(form) }}
+{% endblock %}

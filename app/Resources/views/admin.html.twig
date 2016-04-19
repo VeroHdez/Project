@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Prueba{%endblock%}</title>
+        {% block stylesheets %}
+           
+            <link rel="stylesheet" href="{{ asset('bundles/clinicaapp/css/foundation.css')}}" />
+            <link rel="stylesheet" href="{{ asset('bundles/clinicaapp/css/app.css')}}" />
+            <link rel="stylesheet" href="{{ asset('bundles/clinicaapp/css/estilo.css')}}" />
+        {% endblock %}
+        
+    </head>
+    <body>
+        <div class="row" id="sidebar" >
+            <div id="menu" class="large-12 columns">
+                {%block sidebar %}
+                    <ul>
+                        <li><a href="/" class="small button">Home</a></li>
+                        <li><a href="{{path('nuevo_usuario') }}" class="small button">Alta Usuario</a></li>
+                        <li><a href="{{path('mostrar_cliente')}}" class="small button">Lista de Usuario</a></li>
+                        
+                    </ul>
+                {% endblock %}
+            </div>
+            <div class="large-12 columns">
+                {%block body %}
+                {% endblock %}
+            </div>
+            {% set contact_email = "value" %}
+
+            <div id="pie" class="large-12 columns">
+                <footer>
+                Contacto: {{ contact_email }}
+                </footer>
+            </div>
+        </div>
+        
+    </body>
+</html>

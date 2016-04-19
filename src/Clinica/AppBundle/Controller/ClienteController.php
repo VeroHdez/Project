@@ -26,7 +26,8 @@ class ClienteController extends Controller {
      */
     public function newClienteAction(Request $request){
         $cliente = new Cliente;
-        $logger = new Logger();
+        $archivo = new Archivo('/debug.log');
+        $logger = new Logger($archivo);
 
         $validator= $this->get('validator');
         $errors=$validator->validate($cliente);
@@ -37,7 +38,7 @@ class ClienteController extends Controller {
             $em = $this->getDoctrine()->getManager();
             $em->persist($cliente);
             $em->flush();
-            $logger->info('Conectando con la base de datos...');
+            $logger->info('Nuevo Cliente guardado en la Base de Datos');
             return $this->redirect($this->generateUrl('mostrar_cliente'));
         }
         return array('form' => $form->createView());

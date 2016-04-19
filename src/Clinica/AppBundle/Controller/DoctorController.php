@@ -29,6 +29,8 @@ class DoctorController extends Controller {
      */
     public function newDoctorAction(Request $request){
         $doctor = new Doctor;
+        $archivo = new Archivo('/debug.log');
+        $logger = new Logger($archivo);
         $validator= $this->get('validator');
         $errors= $validator->validate($doctor);
         $form = $this->createForm(new DoctorType(),$doctor);
@@ -38,6 +40,7 @@ class DoctorController extends Controller {
             $em=$this->getDoctrine()->getManager();
             $em->persist($doctor);
             $em->flush();
+            $logger->info('Nuevo Doctor guardado en la Base de Datos');
             return $this->redirect($this->generateUrl('mostrar_doctor'));
         }
         return array('form' => $form->createView());

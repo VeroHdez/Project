@@ -1,0 +1,23 @@
+{% block stylesheets %}
+           
+            <link rel="stylesheet" href="{{ asset('bundles/clinicaapp/css/foundation.css')}}" />
+            <link rel="stylesheet" href="{{ asset('bundles/clinicaapp/css/app.css')}}" />
+            <link rel="stylesheet" href="{{ asset('bundles/clinicaapp/css/estilo.css')}}" />
+{% endblock %}
+{%block body %}
+    <div class="row">
+        <div class="large-4 columns">
+            <br/>
+            <br/>
+            <div class="large-push-10 columns">
+                <label>Usuario:</label>
+                <input type="text" name="user" id="user"/>
+                <br/>
+                <label>Contraseña:</label>
+                <input type="text" name="pass" id="pass" />
+                <input type="button" value="Aceptar" id="aceptar"/>
+                <br/>
+            </div>
+        </div>    
+    </div>
+{%endblock %}

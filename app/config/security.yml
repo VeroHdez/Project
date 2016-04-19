@@ -1,6 +1,8 @@
 security:
     encoders:
         Symfony\Component\Security\Core\User\User: plaintext
+        Clinica\AppBundle\Entity\Usuarios: { algorithm: sha512, iterations: 10
+}
 
     role_hierarchy:
         ROLE_ADMIN:       ROLE_USER
@@ -12,16 +14,10 @@ security:
                 users:
                     user:  { password: userpass, roles: [ 'ROLE_USER' ] }
                     admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
-
-    firewalls:
-        dev:
-            pattern:  ^/(_(profiler|wdt)|css|images|js)/
-            security: false
-
-        login:
-            pattern:  ^/demo/secured/login$
-            security: false
-
+        usuarios:
+            entity: { class: Clinica\AppBundle\Entity\Usuarios, property:usuario }
+  
+   
         secured_area:
             pattern:    ^/demo/secured/
             form_login:
@@ -36,3 +32,6 @@ security:
 
     access_control:
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+        - { path: ^/usuario/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/usuario/newUsuario, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/usuario/*, roles: [ROLE_USUARIO] }

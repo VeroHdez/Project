@@ -17,4 +17,17 @@ nuevo_doctor:
 mostrar_doctor:
     pattern: /doctores/listaDoctor
     defaults: {_controller: ClinicaAppBundle:Doctor:listaDoctor}
+
+nuevo_usuario:
+    pattern: /admin/newUsuario
+    defaults: {_controller: ClinicaAppBundle:Usuario:newUsuario }
     
+usuario_login:
+    pattern: /usuario/login
+    defaults: { _controller: ClinicaAppBundle:Usuario:login }
+
+usuario_login_check:
+    pattern: /usuario/login_check
+
+usuario_logout:
+    pattern: /usuario/logout
