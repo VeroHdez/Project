@@ -43,6 +43,10 @@ class appDevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
         'mostrar_cliente' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Clinica\\AppBundle\\Controller\\ClienteController::listaClientesAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/clientes/listaCliente',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'nuevo_doctor' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Clinica\\AppBundle\\Controller\\DoctorController::newDoctorAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/doctores/newDoctor',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'mostrar_doctor' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Clinica\\AppBundle\\Controller\\DoctorController::listaDoctorAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/doctores/listaDoctor',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'nuevo_usuario' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'ClinicaAppBundle:Usuario:newUsuario',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/admin/newUsuario',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'login' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Clinica\\AppBundle\\Controller\\DefaultController::loginAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/clinica/login',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'login_check' => array (  0 =>   array (  ),  1 =>   array (  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/clinica/login_check',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'logout' => array (  0 =>   array (  ),  1 =>   array (  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/logout',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
     );
         }
     }

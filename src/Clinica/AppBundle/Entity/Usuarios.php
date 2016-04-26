@@ -28,20 +28,11 @@ class Usuarios implements UserInterface
      * @var string
      */
     private $nivel;
+    
+    private $salt;
 
         
-    function eraseCredentials()
-    {
-    }
-    
-    function getRoles()
-    {
-        return array('ROLE_USUARIO');
-    }
-    function getUsername()
-    {
-        return $this->getUsuario();
-    }
+   
 
 
     /**
@@ -124,6 +115,23 @@ class Usuarios implements UserInterface
     public function getNivel()
     {
         return $this->nivel;
+    }
+    
+    public function setSalt($salt){
+        $this->salt=$salt;
+        return $this;
+    }
+    
+    public function getSalt(){
+        return $this->salt;
+    }
+    
+    public function getRoles() {
+        return array('ROLE_USER');
+    }
+    
+    public function eraseCredentials() {
+        
     }
 }
 

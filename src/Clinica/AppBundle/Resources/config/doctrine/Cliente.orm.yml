@@ -16,5 +16,5 @@ Clinica\AppBundle\Entity\Cliente:
             length: '120'
         telefono:
             type: string
-            length: '12'
+            length: '20'
     lifecycleCallbacks: {  }

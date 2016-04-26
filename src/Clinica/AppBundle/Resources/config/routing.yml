@@ -22,12 +22,12 @@ nuevo_usuario:
     pattern: /admin/newUsuario
     defaults: {_controller: ClinicaAppBundle:Usuario:newUsuario }
     
-usuario_login:
-    pattern: /usuario/login
-    defaults: { _controller: ClinicaAppBundle:Usuario:login }
+login:
+    pattern: /clinica/login
+    defaults: { _controller: ClinicaAppBundle:Default:login }
 
-usuario_login_check:
-    pattern: /usuario/login_check
+login_check:
+    pattern: /clinica/login_check
 
-usuario_logout:
-    pattern: /usuario/logout
+logout:
+    pattern: /logout

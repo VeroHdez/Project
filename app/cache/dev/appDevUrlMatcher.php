@@ -160,6 +160,29 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // nuevo_usuario
+        if ($pathinfo === '/admin/newUsuario') {
+            return array (  '_controller' => 'ClinicaAppBundle:Usuario:newUsuario',  '_route' => 'nuevo_usuario',);
+        }
+
+        if (0 === strpos($pathinfo, '/clinica/login')) {
+            // login
+            if ($pathinfo === '/clinica/login') {
+                return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\DefaultController::loginAction',  '_route' => 'login',);
+            }
+
+            // login_check
+            if ($pathinfo === '/clinica/login_check') {
+                return array('_route' => 'login_check');
+            }
+
+        }
+
+        // logout
+        if ($pathinfo === '/logout') {
+            return array('_route' => 'logout');
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

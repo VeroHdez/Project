@@ -22,7 +22,7 @@ Clinica\AppBundle\Entity\Doctor:
             length: '25'
         telefono:
             type: string
-            length: '12'
+            length: '20'
         precioConsulta:
             type: float
     lifecycleCallbacks: {  }
