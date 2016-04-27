@@ -122,27 +122,15 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        if (0 === strpos($pathinfo, '/cli')) {
-            // clinica_app_homepage
-            if (rtrim($pathinfo, '/') === '/clinica') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'clinica_app_homepage');
-                }
-
-                return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'clinica_app_homepage',);
+        if (0 === strpos($pathinfo, '/clientes')) {
+            // nuevo_cliente
+            if ($pathinfo === '/clientes/newCliente') {
+                return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\ClienteController::newClienteAction',  '_route' => 'nuevo_cliente',);
             }
 
-            if (0 === strpos($pathinfo, '/clientes')) {
-                // nuevo_cliente
-                if ($pathinfo === '/clientes/newCliente') {
-                    return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\ClienteController::newClienteAction',  '_route' => 'nuevo_cliente',);
-                }
-
-                // mostrar_cliente
-                if ($pathinfo === '/clientes/listaCliente') {
-                    return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\ClienteController::listaClientesAction',  '_route' => 'mostrar_cliente',);
-                }
-
+            // mostrar_cliente
+            if ($pathinfo === '/clientes/listaCliente') {
+                return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\ClienteController::listaClientesAction',  '_route' => 'mostrar_cliente',);
             }
 
         }
@@ -165,22 +153,19 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'ClinicaAppBundle:Usuario:newUsuario',  '_route' => 'nuevo_usuario',);
         }
 
-        if (0 === strpos($pathinfo, '/clinica/login')) {
-            // login
-            if ($pathinfo === '/clinica/login') {
-                return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\DefaultController::loginAction',  '_route' => 'login',);
-            }
+        // login
+        if ($pathinfo === '/clinica/login') {
+            return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\DefaultController::loginAction',  '_route' => 'login',);
+        }
 
-            // login_check
-            if ($pathinfo === '/clinica/login_check') {
-                return array('_route' => 'login_check');
-            }
-
+        // login_signup
+        if ($pathinfo === '/signup') {
+            return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\DefaultController::signupAction',  '_route' => 'login_signup',);
         }
 
         // logout
-        if ($pathinfo === '/logout') {
-            return array('_route' => 'logout');
+        if ($pathinfo === '/clinica/logout') {
+            return array (  '_controller' => 'Clinica\\AppBundle\\Controller\\DefaultController::logoutAction',  '_route' => 'logout',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

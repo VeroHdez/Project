@@ -1,6 +1,6 @@
-clinica_app_homepage:
-    pattern:  /clinica/
-    defaults: { _controller: ClinicaAppBundle:Default:index }
+#clinica_app_homepage:
+#    pattern:  /clinica/
+#    defaults: { _controller: ClinicaAppBundle:Default:index }
     
 nuevo_cliente:
     pattern: /clientes/newCliente
@@ -25,9 +25,11 @@ nuevo_usuario:
 login:
     pattern: /clinica/login
     defaults: { _controller: ClinicaAppBundle:Default:login }
-
-login_check:
-    pattern: /clinica/login_check
+    
+login_signup:
+    pattern:  /signup
+    defaults: { _controller: ClinicaAppBundle:Default:signup }
 
 logout:
-    pattern: /logout
+    pattern: /clinica/logout
+    defaults: { _controller: ClinicaAppBundle:Default:logout }

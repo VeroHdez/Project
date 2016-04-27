@@ -5,10 +5,11 @@
         <group>
             <file>file:/C:/server/htdocs/Project/app/config/security.yml</file>
             <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Entity/Usuarios.php</file>
             <file>file:/C:/server/htdocs/Project/app/Resources/views/base.html.twig</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/views/Default/citas.html.twig</file>
+            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/views/Usuario/newUsuario.html.twig</file>
             <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/views/Usuario/login.html.twig</file>
-            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Resources/config/doctrine/Usuarios.orm.yml</file>
+            <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Controller/ClienteController.php</file>
             <file>file:/C:/server/htdocs/Project/src/Clinica/AppBundle/Controller/DefaultController.php</file>
         </group>
     </open-files>

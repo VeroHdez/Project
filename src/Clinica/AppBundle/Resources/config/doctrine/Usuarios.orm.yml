@@ -15,10 +15,6 @@ Clinica\AppBundle\Entity\Usuarios:
         pass:
             type: string
             length: '150'
-        nivel:
-            type: string
-            length: '14'
-        salt:
-            type: string
-            length: '64'
+       
+    
     lifecycleCallbacks: {  }

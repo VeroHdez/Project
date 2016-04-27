@@ -16,7 +16,7 @@ namespace Clinica\AppBundle\Controller;
 class Logger
 {
     protected $manejador;
-    function __construct()
+    function __construct($manejador)
     {
         $this->manejador = $manejador;
     }

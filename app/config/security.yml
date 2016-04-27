@@ -18,20 +18,22 @@ security:
             entity: {class: ClinicaAppBundle:Usuarios, property: username }
     
     firewalls:
+        login:
+            pattern:  ^/clinica/login$
+            security: false
+            
         secured_area:
-            pattern: ^/clinica/    
+            pattern: ^/clinica/ 
             form_login:
                 login_path: /clinica/login
                 check_path: /clinica/login_check
+
             logout: 
                 path: /clinica/logout
-                target: /clinica
-                invalidate_session: false
-
+                target: /clinica/login
     
     access_control:
         - {path: ^/secured, roles: ROLE_ADMIN }
-        - {path: /clinica, roles: ROLE_USER }
         
                 
     #providers:

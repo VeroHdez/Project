@@ -17,23 +17,23 @@ class __TwigTemplate_7c025f4297c0b4bd1e923c1ae52d93316b0be122e8ad1faa6dfae79e4c8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_60bfbb28bd8bc3b85defe717f79e797d725d764c0a65edebbfd6720146216afc = $this->env->getExtension("native_profiler");
-        $__internal_60bfbb28bd8bc3b85defe717f79e797d725d764c0a65edebbfd6720146216afc->enter($__internal_60bfbb28bd8bc3b85defe717f79e797d725d764c0a65edebbfd6720146216afc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "ClinicaAppBundle:Usuario:login.html.twig"));
+        $__internal_6f5a0cb0e46180eb02d6c4972f113d0f1eceecab4b6aade23a3a06e9d8cdab32 = $this->env->getExtension("native_profiler");
+        $__internal_6f5a0cb0e46180eb02d6c4972f113d0f1eceecab4b6aade23a3a06e9d8cdab32->enter($__internal_6f5a0cb0e46180eb02d6c4972f113d0f1eceecab4b6aade23a3a06e9d8cdab32_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "ClinicaAppBundle:Usuario:login.html.twig"));
 
         // line 1
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 7
         $this->displayBlock('body', $context, $blocks);
         
-        $__internal_60bfbb28bd8bc3b85defe717f79e797d725d764c0a65edebbfd6720146216afc->leave($__internal_60bfbb28bd8bc3b85defe717f79e797d725d764c0a65edebbfd6720146216afc_prof);
+        $__internal_6f5a0cb0e46180eb02d6c4972f113d0f1eceecab4b6aade23a3a06e9d8cdab32->leave($__internal_6f5a0cb0e46180eb02d6c4972f113d0f1eceecab4b6aade23a3a06e9d8cdab32_prof);
 
     }
 
     // line 1
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_c108cd72cb9e16226b7cfc1ce0d441b6238a0c67ed5ec9683dc45e8b9e4d96bd = $this->env->getExtension("native_profiler");
-        $__internal_c108cd72cb9e16226b7cfc1ce0d441b6238a0c67ed5ec9683dc45e8b9e4d96bd->enter($__internal_c108cd72cb9e16226b7cfc1ce0d441b6238a0c67ed5ec9683dc45e8b9e4d96bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_76bcfa611e8fd865fc03d1a2169ac0bcc3a8eac226a60c24ca2546f1d71b6255 = $this->env->getExtension("native_profiler");
+        $__internal_76bcfa611e8fd865fc03d1a2169ac0bcc3a8eac226a60c24ca2546f1d71b6255->enter($__internal_76bcfa611e8fd865fc03d1a2169ac0bcc3a8eac226a60c24ca2546f1d71b6255_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 2
         echo "           
@@ -51,60 +51,46 @@ class __TwigTemplate_7c025f4297c0b4bd1e923c1ae52d93316b0be122e8ad1faa6dfae79e4c8
         echo "\" />
 ";
         
-        $__internal_c108cd72cb9e16226b7cfc1ce0d441b6238a0c67ed5ec9683dc45e8b9e4d96bd->leave($__internal_c108cd72cb9e16226b7cfc1ce0d441b6238a0c67ed5ec9683dc45e8b9e4d96bd_prof);
+        $__internal_76bcfa611e8fd865fc03d1a2169ac0bcc3a8eac226a60c24ca2546f1d71b6255->leave($__internal_76bcfa611e8fd865fc03d1a2169ac0bcc3a8eac226a60c24ca2546f1d71b6255_prof);
 
     }
 
     // line 7
     public function block_body($context, array $blocks = array())
     {
-        $__internal_330f1da9a824615e34f9a632ce77c03b5127fdb27336459e7cc147e5be0dfa0f = $this->env->getExtension("native_profiler");
-        $__internal_330f1da9a824615e34f9a632ce77c03b5127fdb27336459e7cc147e5be0dfa0f->enter($__internal_330f1da9a824615e34f9a632ce77c03b5127fdb27336459e7cc147e5be0dfa0f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4ba4892e107d70e2872ae392e9830ec41cd7b7b01c0856a8b05b15fcc0d8209f = $this->env->getExtension("native_profiler");
+        $__internal_4ba4892e107d70e2872ae392e9830ec41cd7b7b01c0856a8b05b15fcc0d8209f->enter($__internal_4ba4892e107d70e2872ae392e9830ec41cd7b7b01c0856a8b05b15fcc0d8209f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 8
         echo "    <div class=\"row\">
-        ";
-        // line 9
-        if ((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error"))) {
-            // line 10
-            echo "            <div>";
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "message", array()), "html", null, true);
-            echo "</div>
-        ";
-        }
+          
+        
+        <form name=\"form1\" method=\"POST\" action=\"";
         // line 11
-        echo "    
-        <span class=\"alert-sucess\">
-            ";
-        // line 13
-        echo twig_escape_filter($this->env, (isset($context["flashMessage"]) ? $context["flashMessage"] : $this->getContext($context, "flashMessage")), "html", null, true);
-        echo "
-        </span>
-        <form name=\"form1\" method=\"post\" action=\"";
-        // line 15
-        echo $this->env->getExtension('routing')->getPath("login_check");
+        echo $this->env->getExtension('routing')->getPath("login");
         echo "\">
             <div class=\"large-4 columns\">
                 <br/>
                 <br/>
                 <div class=\"large-push-10 columns\">
                     <label>Usuario:</label>
-                    <input type=\"text\" name=\"_username\" id=\"username\" value=\"";
-        // line 21
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) ? $context["last_username"] : $this->getContext($context, "last_username")), "html", null, true);
-        echo "\"/>
+                    <input type=\"text\" name=\"username\" id=\"username\" />
                     <br/>
                     <label>Contraseña:</label>
-                    <input type=\"text\" name=\"_password\" id=\"password\" />
+                    <input type=\"password\" name=\"password\" id=\"password\" />
                     <input type=\"submit\" value=\"Aceptar\" id=\"aceptar\"/>
                     <br/>
                 </div>
+                    <a href=\"";
+        // line 24
+        echo $this->env->getExtension('routing')->getPath("login_signup");
+        echo "\" class=\"small button\">Nuevo Usuario</a>
             </div>    
         </form>
     </div>
 ";
         
-        $__internal_330f1da9a824615e34f9a632ce77c03b5127fdb27336459e7cc147e5be0dfa0f->leave($__internal_330f1da9a824615e34f9a632ce77c03b5127fdb27336459e7cc147e5be0dfa0f_prof);
+        $__internal_4ba4892e107d70e2872ae392e9830ec41cd7b7b01c0856a8b05b15fcc0d8209f->leave($__internal_4ba4892e107d70e2872ae392e9830ec41cd7b7b01c0856a8b05b15fcc0d8209f_prof);
 
     }
 
@@ -115,7 +101,7 @@ class __TwigTemplate_7c025f4297c0b4bd1e923c1ae52d93316b0be122e8ad1faa6dfae79e4c8
 
     public function getDebugInfo()
     {
-        return array (  94 => 21,  85 => 15,  80 => 13,  76 => 11,  70 => 10,  68 => 9,  65 => 8,  59 => 7,  50 => 5,  46 => 4,  42 => 3,  39 => 2,  33 => 1,  26 => 7,  24 => 1,);
+        return array (  86 => 24,  70 => 11,  65 => 8,  59 => 7,  50 => 5,  46 => 4,  42 => 3,  39 => 2,  33 => 1,  26 => 7,  24 => 1,);
     }
 }
 /* {% block stylesheets %}*/
@@ -126,25 +112,22 @@ class __TwigTemplate_7c025f4297c0b4bd1e923c1ae52d93316b0be122e8ad1faa6dfae79e4c8
 /* {% endblock %}*/
 /* {%block body %}*/
 /*     <div class="row">*/
-/*         {% if error %}*/
-/*             <div>{{error.message}}</div>*/
-/*         {% endif %}    */
-/*         <span class="alert-sucess">*/
-/*             {{flashMessage}}*/
-/*         </span>*/
-/*         <form name="form1" method="post" action="{{path('login_check')}}">*/
+/*           */
+/*         */
+/*         <form name="form1" method="POST" action="{{path('login')}}">*/
 /*             <div class="large-4 columns">*/
 /*                 <br/>*/
 /*                 <br/>*/
 /*                 <div class="large-push-10 columns">*/
 /*                     <label>Usuario:</label>*/
-/*                     <input type="text" name="_username" id="username" value="{{last_username}}"/>*/
+/*                     <input type="text" name="username" id="username" />*/
 /*                     <br/>*/
 /*                     <label>Contraseña:</label>*/
-/*                     <input type="text" name="_password" id="password" />*/
+/*                     <input type="password" name="password" id="password" />*/
 /*                     <input type="submit" value="Aceptar" id="aceptar"/>*/
 /*                     <br/>*/
 /*                 </div>*/
+/*                     <a href="{{path('login_signup') }}" class="small button">Nuevo Usuario</a>*/
 /*             </div>    */
 /*         </form>*/
 /*     </div>*/

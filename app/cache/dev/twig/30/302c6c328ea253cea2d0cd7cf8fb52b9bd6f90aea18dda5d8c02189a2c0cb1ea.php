@@ -22,32 +22,32 @@ class __TwigTemplate_2476e82c8402f82087578c291e4e3b775b1f2d897873c04270498fded32
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ef47effc2361ba9320cd0101966242f1c43cbb06dc2b49f36b1f193c1791ccd4 = $this->env->getExtension("native_profiler");
-        $__internal_ef47effc2361ba9320cd0101966242f1c43cbb06dc2b49f36b1f193c1791ccd4->enter($__internal_ef47effc2361ba9320cd0101966242f1c43cbb06dc2b49f36b1f193c1791ccd4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "ClinicaAppBundle:Doctor:newDoctor.html.twig"));
+        $__internal_7b61a007355b87ebf338eb0b1caf1beb097ebe67efdebdcb8116b328c9bd34d3 = $this->env->getExtension("native_profiler");
+        $__internal_7b61a007355b87ebf338eb0b1caf1beb097ebe67efdebdcb8116b328c9bd34d3->enter($__internal_7b61a007355b87ebf338eb0b1caf1beb097ebe67efdebdcb8116b328c9bd34d3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "ClinicaAppBundle:Doctor:newDoctor.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ef47effc2361ba9320cd0101966242f1c43cbb06dc2b49f36b1f193c1791ccd4->leave($__internal_ef47effc2361ba9320cd0101966242f1c43cbb06dc2b49f36b1f193c1791ccd4_prof);
+        $__internal_7b61a007355b87ebf338eb0b1caf1beb097ebe67efdebdcb8116b328c9bd34d3->leave($__internal_7b61a007355b87ebf338eb0b1caf1beb097ebe67efdebdcb8116b328c9bd34d3_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_d955a5c7fd53f134e7d2a33f290e1598c4b8ad2e7e22ebfecfaa90b9a2a98671 = $this->env->getExtension("native_profiler");
-        $__internal_d955a5c7fd53f134e7d2a33f290e1598c4b8ad2e7e22ebfecfaa90b9a2a98671->enter($__internal_d955a5c7fd53f134e7d2a33f290e1598c4b8ad2e7e22ebfecfaa90b9a2a98671_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_e67979de785a1b8530b6a37650d8d06510744d8085ea5477e0b7780513e78c62 = $this->env->getExtension("native_profiler");
+        $__internal_e67979de785a1b8530b6a37650d8d06510744d8085ea5477e0b7780513e78c62->enter($__internal_e67979de785a1b8530b6a37650d8d06510744d8085ea5477e0b7780513e78c62_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Alta Doctor ";
         
-        $__internal_d955a5c7fd53f134e7d2a33f290e1598c4b8ad2e7e22ebfecfaa90b9a2a98671->leave($__internal_d955a5c7fd53f134e7d2a33f290e1598c4b8ad2e7e22ebfecfaa90b9a2a98671_prof);
+        $__internal_e67979de785a1b8530b6a37650d8d06510744d8085ea5477e0b7780513e78c62->leave($__internal_e67979de785a1b8530b6a37650d8d06510744d8085ea5477e0b7780513e78c62_prof);
 
     }
 
     // line 4
     public function block_body($context, array $blocks = array())
     {
-        $__internal_69f3bfe78e79c92fa83d8a59f97a3eb89f73e7899e97327d9440d5944f9d8128 = $this->env->getExtension("native_profiler");
-        $__internal_69f3bfe78e79c92fa83d8a59f97a3eb89f73e7899e97327d9440d5944f9d8128->enter($__internal_69f3bfe78e79c92fa83d8a59f97a3eb89f73e7899e97327d9440d5944f9d8128_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_7d52a917e702c2b855e0e7d0034fb64e6a8e661dba3bd3bf32b1df5667884f40 = $this->env->getExtension("native_profiler");
+        $__internal_7d52a917e702c2b855e0e7d0034fb64e6a8e661dba3bd3bf32b1df5667884f40->enter($__internal_7d52a917e702c2b855e0e7d0034fb64e6a8e661dba3bd3bf32b1df5667884f40_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         echo " 
     ";
@@ -56,7 +56,7 @@ class __TwigTemplate_2476e82c8402f82087578c291e4e3b775b1f2d897873c04270498fded32
         echo "
 ";
         
-        $__internal_69f3bfe78e79c92fa83d8a59f97a3eb89f73e7899e97327d9440d5944f9d8128->leave($__internal_69f3bfe78e79c92fa83d8a59f97a3eb89f73e7899e97327d9440d5944f9d8128_prof);
+        $__internal_7d52a917e702c2b855e0e7d0034fb64e6a8e661dba3bd3bf32b1df5667884f40->leave($__internal_7d52a917e702c2b855e0e7d0034fb64e6a8e661dba3bd3bf32b1df5667884f40_prof);
 
     }
 
